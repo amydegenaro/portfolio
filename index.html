@@ -23,14 +23,14 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<!-- <span class="icon fa-keyboard-o"></span> -->
-				<span class="icon fa-desktop"></span>
+				<span class="icon fa-keyboard-o"></span>
+				<!-- <span class="icon fa-desktop"></span> -->
 
 			</div>
 			<div class="content">
 				<div class="inner">
 					<h1>Amy De Genaro</h1>
-					<p>Software Developer <br> Brooklyn, NY</p>
+					<p>Software Developer<br>NYC</p>
 				</div>
 			</div>
 			<nav>
@@ -39,7 +39,7 @@
 					<li><a href="#work">Projects</a></li>
 					<li><a href="#about">Resume</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#elements">Elements</a></li>
+					<!-- <li><a href="#elements">Elements</a></li> -->
 				</ul>
 			</nav>
 		</header>
@@ -100,7 +100,7 @@
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="#">
+				<form id="contactform" method="POST">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Name</label>
@@ -108,11 +108,16 @@
 						</div>
 						<div class="field half">
 							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
+							<input type="email" name="_replyto" id="email" />
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+						<div id="hidden-fields">
+							<input type="hidden" name="_next" value="http://localhost:8080/" />
+							<input type="hidden" name="_subject" value="Submission from website contact form" />
+							<input type="text" name="_gotcha" style="display:none" />
 						</div>
 					</div>
 					<ul class="actions">
@@ -120,6 +125,11 @@
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
 				</form>
+				<!-- Wraps email in JS to protect from spambots -->
+				<script>
+					const contactform = document.getElementById('contactform');
+					contactform.setAttribute('action', 'https://formspree.io/' + 'amy.degenaro' + '@' + 'gmail' + '.' + 'com');
+				</script>
 				<ul class="icons">
 					<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
