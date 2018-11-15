@@ -2044,7 +2044,7 @@ input, select, textarea {
 			text-align: center;
 		}
 
-			.image.thumb:after {
+			/* .image.thumb:after {
 				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
@@ -2075,7 +2075,7 @@ input, select, textarea {
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
 				opacity: 1.0;
-			}
+			} */
 
 		.image img {
 			border-radius: 0.35em;
@@ -2681,7 +2681,7 @@ input, select, textarea {
 
 /* Poptrox */
 
-	@-moz-keyframes spin {
+	/* @-moz-keyframes spin {
 		0% {
 			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
@@ -2922,7 +2922,7 @@ input, select, textarea {
 
 			.poptrox-popup:hover .closer:hover {
 				opacity: 1.0;
-			}
+			} */
 
 /* Touch */
 
@@ -2939,11 +2939,11 @@ input, select, textarea {
 		background-size: auto, cover;
 	}
 
-	body.is-touch .poptrox-popup .nav-next,
+	/* body.is-touch .poptrox-popup .nav-next,
 	body.is-touch .poptrox-popup .nav-previous,
 	body.is-touch .poptrox-popup .closer {
 		opacity: 1.0 !important;
-	}
+	} */
 
 /* XLarge */
 
@@ -3150,7 +3150,7 @@ input, select, textarea {
 
 		/* Poptrox */
 
-			.poptrox-popup {
+			/* .poptrox-popup {
 				border-radius: 0;
 			}
 
@@ -3159,7 +3159,7 @@ input, select, textarea {
 					margin-top: -1em;
 				}
 
-	}
+	} */
 
 /* XSmall */
 
