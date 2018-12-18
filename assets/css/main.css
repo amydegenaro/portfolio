@@ -10,5 +10,164 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  background-image: url(../../images/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.header {
+  height: 100vh;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      #696969d0,
+      #252525d0);
+  position: relative;
+
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) */
+}
+
+.heading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+
+  backface-visibility: hidden;
+}
+
+.heading-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 20px;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 14px;
+  animation: moveInRight 1s ease-out;
+}
+
+.nav-box {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  animation: moveInBottom 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.nav-item {
+  display: inline;
+  margin: 20px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  /* text-decoration: underline; */
+  color: pink;
+}
+
+.section {
+  background-color: #fff;
+  padding: 70px 100px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-alt {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      #696969d0,
+      #252525d0);
+  padding: 70px 100px;
+  color: #fff;
+}
+
+.project-img {
+  width: 80vw;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* ANIMATIONS */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  /* 80% {
+    transform: translateX(10px);
+  } */
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  /* 80% {
+    transform: translateX(-10px);
+  } */
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
 }
