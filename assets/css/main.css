@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* aka 10px */
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  margin: 0 6%;
+  /* margin: 0 6%; */
 }
 
 h2 {
@@ -99,7 +99,7 @@ p {
 
 .section {
   background-color: #fff;
-  padding: 5rem 10% 5rem 10%;
+  padding: 2rem 8%;
   font-size: 1.6rem;
 }
 
@@ -118,10 +118,19 @@ p {
   margin-bottom: 3rem;
 }
 
+.skills-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-item {
+  flex: 1 0 0;
+}
+
 .project-item {
   display: flex;
   flex-direction: row;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .project-img-box {
@@ -133,6 +142,7 @@ p {
 }
 
 .project-content {
+  padding-left: 2rem;
   flex: 1 0 0;
 }
 
@@ -204,13 +214,19 @@ textarea {
     font-size: 120%;
   } */
 
-  .project-item {
-    display: flex;
+  .skills-content {
     flex-direction: column;
   }
 
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-content {
+    padding-left: 0;
+  }
+
   .contact-content {
-    display: flex;
     flex-direction: column;
   }
 
@@ -221,9 +237,9 @@ textarea {
 }
 
 @media screen and (max-width: 375px) {
-  html {
+  /* html {
     font-size: 50%;
-  }
+  } */
 
   body {
     margin: 0;
@@ -233,13 +249,13 @@ textarea {
     font-weight: 300;
   }
 
-  /* .heading-main {
+  .heading-main {
     letter-spacing: 1.5rem;
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .heading-sub {
-    font-size: .5em;
-  } */
+    font-size: 1em;
+  }
 
 }
