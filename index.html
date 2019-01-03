@@ -17,6 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
@@ -24,7 +25,6 @@
 
 		<header id="home" class="header">
 			<div class="heading-box">
-				<!-- <div><span class="icon fa-keyboard-o"></span></div> -->
 				<h1 class="heading">
 					<span class="heading-main">Amy DeGenaro</span>
 					<span class="heading-sub">Software Engineer</span>
@@ -50,7 +50,7 @@
 					<!-- <a><img src="images/headshot.jpg" alt="" /></a> -->
 					<div class="section-heading">
 						<h2>About</h2>
-						<hr>
+						<!-- <hr> -->
 					</div>
 
 					<div>
@@ -68,18 +68,22 @@
 				<div>
 					<div class="section-heading">
 						<h2>Skills</h2>
-						<hr>
+						<!-- <hr> -->
 					</div>
 
 					<div class="skills-content">
 						<div class="skills-item">
-							<h3>Front End</h3>
-							<p>React • Redux • HTML5 • CSS3 • Sass • Bootstrap</p>
+							<h4>Front End</h4>
+							<p>React | Redux | HTML5 | CSS3 | Sass | Bootstrap</p>
 						</div>
 						<div class="skills-item">
-							<h3>Back End</h3>
-							<p>Node • Express • PostgreSQL • Sequelize</p>
+							<h4>Back End</h4>
+							<p>Node | Express | PostgreSQL | Sequelize | SQL</p>
 						</div>
+						<div class="skills-item">
+								<h4>Other</h4>
+								<p>Mapbox | Docker | Github | Webpack</p>
+							</div>
 					</div>
 				</div>
 			</section>
@@ -88,7 +92,7 @@
 				<div>
 					<div class="section-heading">
 						<h2>Projects</h2>
-						<hr>
+						<!-- <hr> -->
 					</div>
 
 					<div>
@@ -97,9 +101,12 @@
 							<a href="https://galacticode.herokuapp.com" target="_blank" class="project-img-box"><img src="images/galacticode.png" alt="" class="project-img"/></a>
 
 							<div class="project-content">
-								<h3>Galacticode <a href="https://github.com/Space-Explorers" target="_blank" class="icon fa-github"><span>Github</span></a></h3>
+								<h3>Galacticode</h3>
 								<p>Galacticode is a platform for practicing foundational JavaScript concepts in a 3D gaming interface that guides players through increasingly difficult coding challenges. Players help Nova, a lost alien in space, get home by solving coding challenges to gain fuel points and unlock planets, all while practicing their JavaScript skills.</p>
-								<a href="https://galacticode.herokuapp.com" target="_blank">Visit site</a>
+								<div class="icons">
+									<a href="https://github.com/Space-Explorers" target="_blank"><span class="fab fa-github fa-2x"></span></a>
+									<a href="https://galacticode.herokuapp.com" target="_blank"><span class="fas fa-arrow-circle-right fa-2x"></span></a>
+								</div>
 							</div>
 
 						</article>
@@ -109,12 +116,12 @@
 							<a href="https://parkitech.herokuapp.com" target="_blank" class="project-img-box"><img src="images/parkitech.png" alt="" class="project-img"/></a>
 
 							<div class="project-content">
-								<h3>Parkitech <a href="https://github.com/amydegenaro/parkitech" target="_blank" class="icon fa-github"><span>Github</span></a></h3>
-								<p>Parkitech is a geogtagged ticket board for park management that was created to fill a technology gap often found
-									in small non-profits managing public parks and spaces. Parkitech is a ticket board with a responsive interface for use on mobile, tablet, and desktop devices both in the field and the office. Tickets are geotagged to
-									record and plot their exact coordinates on a map, allowing for better tracking, organization, and analytics of
-									park operations.</p>
-								<a href="https://parkitech.herokuapp.com" target="_blank">Visit site</a>
+								<h3>Parkitech</h3>
+								<p>Parkitech is a geogtagged ticket board for park management that was created to fill a technology gap often found in small non-profits managing public parks and spaces. Parkitech is a ticket board with a responsive interface for use on mobile, tablet, and desktop devices both in the field and the office. Tickets are geotagged to record and plot their exact coordinates on a map, allowing for better tracking, organization, and analytics of park operations.</p>
+								<div class="icons">
+									<a href="https://github.com/amydegenaro/parkitech" target="_blank"><span class="fab fa-github fa-2x"></span></a>
+									<a href="https://parkitech.herokuapp.com" target="_blank"><span class="fas fa-arrow-circle-right fa-2x"></span></a>
+								</div>
 							</div>
 
 						</article>
@@ -124,12 +131,12 @@
 							<a href="https://spell-binder.herokuapp.com" target="_blank" class="project-img-box"><img src="images/spellbinder.png" alt="" class="project-img"/></a>
 
 							<div class="project-content">
-								<h3>SpellBinder <a href="https://github.com/ans-graceshopper/spell-store" target="_blank" class="icon fa-github"><span>Github</span></a></h3>
-								<p>An e-commerce web application that sells a variety of magic spells. SpellBinder showcases a dynamic shopping
-									cart component with update and delete functionality. Shoppers can search for spells by name, filter by category or
-									type, and add one or more spells to their cart. Shoppers can add to their cart without an account, but must login
-									to checkout with Stripe. The contents of a shopper's cart is carried over and saved once the shopper logs in.</p>
-									<a href="https://spell-binder.herokuapp.com" target="_blank">Visit site</a>
+								<h3>SpellBinder</h3>
+								<p>An e-commerce web application that sells a variety of magic spells. SpellBinder showcases a dynamic shopping cart component with update and delete functionality. Shoppers can search for spells by name, filter by category or type, and add one or more spells to their cart. Shoppers can add to their cart without an account, but must login to checkout with Stripe. The contents of a shopper's cart is carried over and saved once the shopper logs in.</p>
+								<div class="icons">
+									<a href="https://github.com/ans-graceshopper/spell-store" target="_blank"><span class="fab fa-github fa-2x"></span></a>
+									<a href="https://spell-binder.herokuapp.com" target="_blank"><span class="fas fa-arrow-circle-right fa-2x"></span></a>
+								</div>
 							</div>
 
 						</article>
@@ -143,7 +150,7 @@
 				<div>
 					<div class="section-heading">
 						<h2>Contact</h2>
-						<hr>
+						<!-- <hr> -->
 					</div>
 
 					<div class="contact-content">
@@ -197,8 +204,8 @@
 
 	</body>
 
-	<footer class="footer">
-		<span>&copy; 2019 Made by Amy De Genaro.</span>
+	<footer class="footer section-alt">
+		<span><i class="far fa-copyright"></i> 2019 Designed by Amy De Genaro.</span>
 	</footer>
 
 </html>

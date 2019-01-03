@@ -27,7 +27,7 @@ body {
 
 h2 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2rem;
   line-height: 2;
 }
@@ -99,8 +99,12 @@ p {
 
 .section {
   background-color: #fff;
-  padding: 2rem 8%;
+  padding: 5rem 10% 5rem 10%;
   font-size: 1.6rem;
+}
+
+.section h2 {
+  color: darkgreen;
 }
 
 .section-alt {
@@ -109,7 +113,7 @@ p {
       to right bottom,
       #696969d0,
       #252525d0); */
-  background-color: #252525d0;
+  background-color: #252525b9;
   padding: 5rem 10% 5rem 10%;
   color: #fff;
 }
@@ -121,16 +125,17 @@ p {
 .skills-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.skills-item {
+/* .skills-item {
   flex: 1 0 0;
-}
+} */
 
 .project-item {
   display: flex;
   flex-direction: row;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .project-img-box {
@@ -138,12 +143,25 @@ p {
 }
 
 .project-img {
+  border: 1px #777 solid;
   width: 100%;
 }
 
 .project-content {
   padding-left: 2rem;
   flex: 1 0 0;
+}
+
+.icons {
+  word-spacing: 1rem;
+}
+
+.icons a {
+  color: #777;
+}
+
+.icons a:hover {
+  color: pink;
 }
 
 .contact-content {
