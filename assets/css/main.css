@@ -99,7 +99,8 @@ p {
 
 .section {
   background-color: #fff;
-  padding: 5rem 10% 5rem 10%;
+  margin: 0 5%;
+  padding: 5rem 10% 2rem 10%;
   font-size: 1.6rem;
 }
 
@@ -114,7 +115,8 @@ p {
       #696969d0,
       #252525d0); */
   background-color: #252525b9;
-  padding: 5rem 10% 5rem 10%;
+  margin: 0 5%;
+  padding: 5rem 10% 2rem 10%;
   font-size: 1.6rem;
   color: #fff;
 }
@@ -292,6 +294,8 @@ textarea {
   }
 
   .nav-box {
+    display: flex;
+    flex-direction: column;
     font-weight: 300;
   }
 
